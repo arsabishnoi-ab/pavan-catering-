@@ -1,26 +1,160 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-dm), "Segoe UI", sans-serif;
+  --font-display: var(--font-forum), Georgia, serif;
+  --font-serif: var(--font-forum), Georgia, serif;
+  --font-hindi: var(--font-tiro), "Nirmala UI", serif;
+  --color-maroon: #641b25;
+  --color-maroon-deep: #0e0d0c;
+  --color-gold: #e4c590;
+  --color-gold-deep: #e4c590;
+  --color-ivory: #171819;
+  --color-ink: #e4e4e4;
+  --color-beige: #111110;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #171819;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+::selection {
+  background: #e4c590;
+  color: #171819;
+}
+
+:focus-visible {
+  outline: 2px solid #e4c590;
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-forum), Georgia, serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+input,
+select,
+textarea {
+  color: #ffffff;
+  color-scheme: dark;
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shine-sweep {
+  from {
+    left: -70%;
+  }
+  to {
+    left: 130%;
+  }
+}
+
+@keyframes logo-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes ring-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-zoom {
+  animation: hero-zoom 7s linear forwards;
+}
+
+.hero-piece {
+  animation: hero-rise 0.9s ease both;
+}
+
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -70%;
+  z-index: 2;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.45));
+  transform: skewX(-25deg);
+  pointer-events: none;
+}
+
+.shine:hover::after {
+  animation: shine-sweep 0.85s ease;
+}
+
+.tilt {
+  transition: transform 0.45s ease;
+}
+
+.tilt:hover {
+  transform: perspective(900px) rotateY(-7deg) rotateX(3deg) scale(1.04);
+}
+
+.logo-float {
+  animation: logo-float 4.8s ease-in-out infinite;
+}
+
+.ring-spin {
+  animation: ring-spin 16s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-zoom,
+  .hero-piece,
+  .logo-float,
+  .ring-spin,
+  .shine:hover::after {
+    animation: none;
+  }
+
+  .tilt:hover {
+    transform: none;
+  }
 }
