@@ -19,8 +19,8 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-6xl items-start gap-12 px-5 pb-20 md:grid-cols-12 md:px-8">
         <div className="relative aspect-[4/3] md:col-span-7">
           <Image
-            src="/images/about-kitchen.jpg"
-            alt="The vegetarian kitchen of Shree Pavan Caterers in Keshwapur, Hubballi"
+            src="/images/fresh/about-kitchen.jpg"
+            alt="Spices used in the vegetarian kitchen of Shree Pavan Caterers, Hubballi"
             fill
             sizes="(min-width: 768px) 55vw, 100vw"
             className="object-cover"

@@ -15,7 +15,7 @@ export function ChaiStation() {
       </div>
       <div className="relative order-1 aspect-[4/3] overflow-hidden bg-beige lg:order-2">
         <Image
-          src="/images/chai-kulhad.jpg"
+          src="/images/fresh/chai-kulhad.jpg"
           alt="Kulhad masala chai for a Hubballi wedding"
           fill
           sizes="(min-width: 1024px) 45vw, 100vw"

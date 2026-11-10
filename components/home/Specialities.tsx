@@ -5,14 +5,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const items = [
-  { title: "Marwari", image: "/images/marwari.jpg", href: "/services#marwari" },
-  { title: "Jain", image: "/images/jain.jpg", href: "/services#jain" },
-  { title: "North Indian", image: "/images/north-indian.jpg", href: "/services#north-indian" },
-  { title: "Rajasthani", image: "/images/dishes/dal-marwadi.jpg", href: "/menu#rajasthani" },
-  { title: "Chaat", image: "/images/dishes/pani-puri.jpg", href: "/menu#chaat" },
-  { title: "Breads", image: "/images/dishes/phulka.jpg", href: "/menu#breads" },
-  { title: "Mithai", image: "/images/sweets-festive.jpg", href: "/sweets" },
-  { title: "Chai", image: "/images/chai-kulhad.jpg", href: "/contact" },
+  { title: "Marwari", image: "/images/fresh/marwari.jpg", href: "/services#marwari" },
+  { title: "Jain", image: "/images/fresh/jain.jpg", href: "/services#jain" },
+  { title: "North Indian", image: "/images/fresh/north-indian.jpg", href: "/services#north-indian" },
+  { title: "Rajasthani", image: "/images/fresh/dal-marwadi.jpg", href: "/menu#rajasthani" },
+  { title: "Chaat", image: "/images/fresh/pani-puri.jpg", href: "/menu#chaat" },
+  { title: "Breads", image: "/images/fresh/phulka.jpg", href: "/menu#breads" },
+  { title: "Mithai", image: "/images/fresh/sweets-festive.jpg", href: "/sweets" },
+  { title: "Chai", image: "/images/fresh/chai-kulhad.jpg", href: "/contact" },
 ];
 
 const card = 280;

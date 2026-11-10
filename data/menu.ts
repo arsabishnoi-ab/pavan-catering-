@@ -34,7 +34,7 @@ function dish(
     name,
     hindi,
     description,
-    image: photo ? `/images/dishes/${id}.jpg` : undefined,
+    image: photo ? `/images/fresh/${id}.jpg` : undefined,
   };
 }
 
@@ -108,12 +108,14 @@ export const categories: MenuCategory[] = [
         "Button idli",
         "बटन ईडली",
         "Tiny steamed idlis for the South Indian side of breakfast.",
+        true,
       ),
       dish(
         "medu-vada",
         "Vada",
         "वडा",
         "Medu vada with sambar and chutney.",
+        true,
       ),
       dish(
         "poha",
@@ -138,38 +140,33 @@ export const categories: MenuCategory[] = [
         "Papaya chutney",
         "पपीता चटनी",
         "Fresh papaya chutney for the fafda.",
-        false,
       ),
       dish(
         "sambar",
         "Sambar",
         "साम्बर",
         "Served with the vada and idli.",
-        false,
       ),
       dish(
         "chutney",
         "Chutney",
         "चटनी",
         "The breakfast chutney, with ghee on the side.",
-        false,
       ),
       dish(
         "milk-ghee-jaggery",
         "Milk, ghee and jaggery",
         "दूध, घी, गुड",
         "Warm milk with ghee and jaggery.",
-        false,
       ),
       dish(
         "bread-butter-jam",
         "Bread, butter and jam",
         "ब्रेड बटर जाम",
         "A plain alternative for guests who want it.",
-        false,
       ),
-      dish("tea-coffee", "Tea and coffee", "चाय, कॉफी", "Hot tea and coffee through the morning.", false),
-      dish("water", "Drinking water", "पानी", "Water with the meal.", false),
+      dish("tea-coffee", "Tea and coffee", "चाय, कॉफी", "Hot tea and coffee through the morning."),
+      dish("water", "Drinking water", "पानी", "Water with the meal."),
     ],
   },
   {
@@ -202,6 +199,7 @@ export const categories: MenuCategory[] = [
         "Matar samosa",
         "मटर समोसा",
         "Pea samosa from the lunch namkeen.",
+        true,
       ),
       dish(
         "dry-namkeen",
@@ -232,7 +230,6 @@ export const categories: MenuCategory[] = [
         "Two chutneys",
         "चटनी 2 टाइप",
         "Two chutneys with the namkeen.",
-        false,
       ),
     ],
   },
@@ -242,7 +239,7 @@ export const categories: MenuCategory[] = [
     kicker: "A separate counter",
     intro: "The lunch card keeps a chaat line of its own, after the rice and before the ice cream.",
     dishes: [
-      dish("pani-puri", "Pani puri", "पानी पुरी", "Puri, paani and potato, assembled to order."),
+      dish("pani-puri", "Pani puri", "पानी पुरी", "Puri, paani and potato, assembled to order.", true),
       dish("papdi-chaat", "Papdi chaat", "पापडी चाट", "Crisp papdi with chutneys and yoghurt."),
       dish(
         "pizza-cheese",
@@ -265,6 +262,7 @@ export const categories: MenuCategory[] = [
         "Butter paneer masala",
         "बटर पनीर मसाला",
         "Paneer in a tomato gravy, the centrepiece of the lunch sabzis.",
+        true,
       ),
       dish(
         "salad",
@@ -304,6 +302,7 @@ export const categories: MenuCategory[] = [
         "Dal marwadi",
         "दाल मारवाडी",
         "A rich Marwadi dal, listed with the rice on the card.",
+        true,
       ),
       dish(
         "dudhi-gatta",
@@ -342,7 +341,7 @@ export const categories: MenuCategory[] = [
     kicker: "रोटी",
     intro: "Live phulka at lunch, tandoor roti, millet roti, and thepla from the evening bread counter.",
     dishes: [
-      dish("phulka", "Phulka, live", "फुलका (लाईव)", "Whole-wheat phulka, puffed at the stall while lunch is served."),
+      dish("phulka", "Phulka, live", "फुलका (लाईव)", "Whole-wheat phulka, puffed at the stall while lunch is served.", true),
       dish("tandoori-roti", "Delhi tandoori", "दिल्ली तन्दुरी", "Tandoori roti from the lunch bread list."),
       dish("bajri-roti", "Bajri roti", "बाजरी रोटी", "Thick millet roti, the Rajasthani bread on the card."),
       dish("thepla", "Thepla", "थेपला", "Gujarati thepla from the evening bread counter."),
@@ -356,12 +355,12 @@ export const categories: MenuCategory[] = [
     dishes: [
       dish("matka-pulao", "Matka pulao", "मटका पुलाव", "Vegetable pulao served from a clay matka."),
       dish("raita", "Raita", "रायता", "Raita set out with the rice. The card notes it is to be served warm."),
-      dish("steamed-rice", "Steamed rice", "राईस", "Plain rice at lunch and with the evening rasam.", false),
-      dish("lijjat-papad", "Lijjat papad", "लिज़्जीत पापड", "Lijjat papad with the rice.", false),
-      dish("pickle", "Pickle", "अचार", "Achar with the rice course.", false),
-      dish("papad", "Papad", "पापड", "Papad on the lunch table.", false),
-      dish("bottled-water", "Bottled water", "पानी बोतल", "A bottle of water with the lunch service.", false),
-      dish("mukhwas", "Mukhwas", "मुखवास", "Mouth freshener after the meal.", false),
+      dish("steamed-rice", "Steamed rice", "राईस", "Plain rice at lunch and with the evening rasam."),
+      dish("lijjat-papad", "Lijjat papad", "लिज़्जीत पापड", "Lijjat papad with the rice."),
+      dish("pickle", "Pickle", "अचार", "Achar with the rice course."),
+      dish("papad", "Papad", "पापड", "Papad on the lunch table."),
+      dish("bottled-water", "Bottled water", "पानी बोतल", "A bottle of water with the lunch service."),
+      dish("mukhwas", "Mukhwas", "मुखवास", "Mouth freshener after the meal."),
     ],
   },
   {
@@ -383,7 +382,7 @@ export const categories: MenuCategory[] = [
       ),
       dish("stick-sweet", "Stick sweet", "स्टिक स्वीट", "Two sweet sticks on the morning service."),
       dish("kalakand", "Hot kalakand", "गर्म कलाकन्द", "Kalakand served warm at the evening meal."),
-      dish("gulab-jamun", "Hot gulab jamun", "गर्म गुलाब जामुन", "Gulab jamun in syrup, served hot."),
+      dish("gulab-jamun", "Hot gulab jamun", "गर्म गुलाब जामुन", "Gulab jamun in syrup, served hot.", true),
       dish(
         "ice-cream",
         "Ice cream, Abu Gadda",
@@ -412,14 +411,12 @@ export const categories: MenuCategory[] = [
         "Hajiyo",
         "हाजीयो",
         "Listed on the evening card between dudhi gatta and rasam, under this name.",
-        false,
       ),
       dish(
         "putana-chutney",
         "Ghee and putana chutney",
         "घी, पुटाणा चटनी",
         "Ghee and putana chutney with the evening idli and rice.",
-        false,
       ),
     ],
   },

@@ -8,7 +8,7 @@ export function JsonLd() {
     alternateName: ["Shri Pavan Caterers", site.hindiName],
     description: site.description,
     url: site.url,
-    image: `${site.url}/images/hero-buffet.jpg`,
+    image: `${site.url}/images/fresh/hero-buffet.jpg`,
     logo: `${site.url}/images/logo.png`,
     telephone: hosts.map((host) => host.tel),
     servesCuisine: [

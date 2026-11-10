@@ -6,7 +6,7 @@ export function Introduction() {
       <div className="mx-auto grid max-w-[1200px] items-center gap-12 px-5 md:grid-cols-2 md:gap-16 md:px-8">
         <div className="relative aspect-[4/5] bg-[#111]">
           <Image
-            src="/images/intro-thali.jpg"
+            src="/images/fresh/intro-thali.jpg"
             alt="A vegetarian Indian thali from Shree Pavan Caterers"
             fill
             sizes="(min-width: 768px) 50vw, 100vw"

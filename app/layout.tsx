@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     url: "/",
     images: [
       {
-        url: "/images/hero-buffet.jpg",
+        url: "/images/fresh/hero-buffet.jpg",
         width: 1200,
         height: 675,
         alt: "Vegetarian wedding buffet by Shree Pavan Caterers, Hubballi",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shree Pavan Caterers | Hubballi",
     description: site.description,
-    images: ["/images/hero-buffet.jpg"],
+    images: ["/images/fresh/hero-buffet.jpg"],
   },
   robots: { index: true, follow: true },
 };

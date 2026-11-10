@@ -30,7 +30,7 @@ export function SweetsBand() {
     <section
       ref={ref}
       className="relative bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: "url(/images/wedding-service.jpg)" }}
+      style={{ backgroundImage: "url(/images/fresh/wedding-service.jpg)" }}
     >
       <div className="bg-black/50 px-5 py-24 md:py-32">
         <div className="mx-auto mb-10 h-px max-w-3xl bg-[repeating-linear-gradient(90deg,#e4c590_0_8px,transparent_8px_16px)] opacity-80" />

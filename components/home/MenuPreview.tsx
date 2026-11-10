@@ -9,7 +9,7 @@ const tabs = [
     label: "Our story",
     kicker: "Shree Pavan Caterers",
     title: "A Hubballi wedding kitchen",
-    image: "/images/about-kitchen.jpg",
+    image: "/images/fresh/about-kitchen.jpg",
     alt: "Vegetarian cooking for a celebration in Hubballi",
     imageFirst: true,
     body: (
@@ -28,7 +28,7 @@ const tabs = [
     label: "Why Pavan",
     kicker: "Why Shree Pavan Caterers",
     title: "How a function is handled",
-    image: "/images/occasion-family.jpg",
+    image: "/images/fresh/occasion-family.jpg",
     alt: "A family gathering table",
     imageFirst: false,
     list: [
@@ -46,7 +46,7 @@ const tabs = [
     label: "Food & quality",
     kicker: "Food and quality",
     title: "Our promise to you",
-    image: "/images/dishes/butter-paneer.jpg",
+    image: "/images/fresh/butter-paneer.jpg",
     alt: "Butter paneer from the vegetarian kitchen",
     imageFirst: true,
     list: [

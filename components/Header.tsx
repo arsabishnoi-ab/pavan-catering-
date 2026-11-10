@@ -54,19 +54,16 @@ const links = [
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [openedGroup, setOpenedGroup] = useState<string | null>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    setOpen(false);
+    setOpenedGroup(null);
+  }, [pathname]);
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${scrolled || open ? "bg-[#1a1a1a]/95" : "bg-black/25"}`}>
-      <div className="mx-auto flex h-20 max-w-[1600px] items-center justify-between gap-4 px-4 lg:px-8">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-[#e4c590]/35 bg-[#111110]/95 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-md">
+      <div className="mx-auto flex h-[72px] max-w-[1600px] items-center justify-between gap-4 px-4 lg:px-8">
         <Link href="/" className="shrink-0" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo.png"
@@ -80,7 +77,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-6 xl:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-3 lg:flex xl:gap-5" aria-label="Primary">
           {links.map((item) => {
             const current =
               item.label !== "Venue" && (item.href === "/" ? pathname === "/" : pathname === item.href);
@@ -88,7 +85,7 @@ export function Header() {
               <div key={item.label} className="group relative">
                 <Link
                   href={item.href}
-                  className={`inline-flex items-center gap-1 text-[13px] font-medium tracking-[0.14em] uppercase ${
+                  className={`inline-flex items-center gap-1 text-[11px] font-medium tracking-[0.12em] uppercase xl:text-[13px] xl:tracking-[0.14em] ${
                     current ? "text-[#e4c590]" : "text-white hover:text-[#e4c590]"
                   }`}
                 >
@@ -125,12 +122,12 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center text-white xl:hidden"
+          className="inline-flex h-11 items-center gap-2 px-1 text-[12px] font-medium tracking-[0.16em] text-[#e4c590] uppercase lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           onClick={() => setOpen((value) => !value)}
         >
-          <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
+          <span>{open ? "Close" : "Menu"}</span>
           <span aria-hidden className="flex w-5 flex-col gap-1.5">
             <span className="h-px bg-white" />
             <span className="h-px bg-white" />
@@ -140,7 +137,7 @@ export function Header() {
       </div>
 
       {open ? (
-        <nav id="mobile-nav" className="max-h-[75vh] overflow-y-auto border-t border-white/10 bg-[#1a1a1a] px-6 py-5 xl:hidden" aria-label="Mobile">
+        <nav id="mobile-nav" className="max-h-[75vh] overflow-y-auto border-t border-white/10 bg-[#111110] px-6 py-5 lg:hidden" aria-label="Mobile">
           <ul className="space-y-3">
             {links.map((item) => (
               <li key={item.label}>

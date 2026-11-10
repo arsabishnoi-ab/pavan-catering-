@@ -7,7 +7,7 @@ const mithai = [
   { name: "Sitaphal rabdi", hindi: "सीताफल रबडी", image: "/images/dishes/sitaphal-rabdi.jpg" },
   { name: "Kaju paan", hindi: "काजु पान स्वीट", image: "/images/dishes/kaju-paan.jpg" },
   { name: "Hot kalakand", hindi: "गर्म कलाकन्द", image: "/images/dishes/kalakand.jpg" },
-  { name: "Hot gulab jamun", hindi: "गर्म गुलाब जामुन", image: "/images/dishes/gulab-jamun.jpg" },
+  { name: "Hot gulab jamun", hindi: "गर्म गुलाब जामुन", image: "/images/fresh/gulab-jamun.jpg" },
   { name: "Baklava", hindi: "बकलावा", image: "/images/dishes/baklava.jpg" },
   { name: "Badam sheera", hindi: "बादाम सीरा", image: "/images/dishes/badam-sheera.jpg" },
   { name: "Australian angoori", hindi: "ऑस्ट्रेलियन अंगुरी", image: "/images/dishes/angoori.jpg" },
@@ -30,7 +30,7 @@ export default function SweetsPage() {
       <div className="relative mx-auto aspect-[16/7] max-w-6xl overflow-hidden px-5 md:px-8">
         <div className="relative h-full min-h-64">
           <Image
-            src="/images/sweets-festive.jpg"
+            src="/images/fresh/sweets-festive.jpg"
             alt="Indian festive sweets arranged for a Hubballi celebration"
             fill
             sizes="100vw"

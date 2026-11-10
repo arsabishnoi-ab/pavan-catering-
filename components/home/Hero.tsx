@@ -7,19 +7,19 @@ import { GoldRule } from "@/components/GoldRule";
 
 const slides = [
   {
-    image: "/images/occasion-wedding.jpg",
+    image: "/images/fresh/occasion-wedding.jpg",
     alt: "A vegetarian wedding table set by Shree Pavan Caterers in Hubballi",
     title: "Where Every Celebration Becomes a Feast",
     text: "Authentic Marwari, Jain and North Indian catering for your special moments.",
   },
   {
-    image: "/images/hero-buffet.jpg",
+    image: "/images/fresh/hero-buffet.jpg",
     alt: "Vegetarian buffet service at a Hubballi celebration",
     title: "Occasion for Today, Memories for a Lifetime",
     text: "Breakfast, lunch and an evening meal, cooked and served at your venue.",
   },
   {
-    image: "/images/sweets-festive.jpg",
+    image: "/images/fresh/sweets-festive.jpg",
     alt: "Festive Indian sweets prepared for a celebration",
     title: "Flavors for the Festival Table",
     text: "Diwali, Dasara, Holi and wedding mithai from the same vegetarian kitchen.",

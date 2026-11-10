@@ -42,7 +42,7 @@ export function Reviews() {
   return (
     <section
       className="bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: "url(/images/intro-thali.jpg)" }}
+      style={{ backgroundImage: "url(/images/fresh/intro-thali.jpg)" }}
     >
       <div className="bg-black/55 px-5 py-24 md:py-32">
         <h2 className="text-center font-display text-[40px] text-white md:text-[64px]">What People Are Saying</h2>

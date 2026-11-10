@@ -5,19 +5,19 @@ import { GoldRule } from "@/components/GoldRule";
 const offers = [
   {
     title: "Weddings",
-    image: "/images/occasion-wedding.jpg",
+    image: "/images/fresh/occasion-wedding.jpg",
     href: "/occasions#weddings",
     link: "View occasions",
   },
   {
     title: "Cuisine",
-    image: "/images/intro-thali.jpg",
+    image: "/images/fresh/intro-thali.jpg",
     href: "/menu",
     link: "View menu",
   },
   {
     title: "Live stations",
-    image: "/images/chai-kulhad.jpg",
+    image: "/images/fresh/chai-kulhad.jpg",
     href: "/sweets",
     link: "View sweets",
   },
